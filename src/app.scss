@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 14px;
+}
+
+
+.container{
+    width: 1440px;
+    margin: auto;
+    display: inline-block;
+    .album{
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-grow: 1;
+        .albumPoster{
+            width: calc(100% / 3);
+            padding: 14px;
+            text-align: center;
+            img{
+                max-height: 150px;
+                max-width: 150px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        h1{
+            
+        }
+    }
+
+}
+
+.flex{
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-grow: 1;
+}
