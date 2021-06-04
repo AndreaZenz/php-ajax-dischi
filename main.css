@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(206, 197, 197);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 14px;
+}
+
+.albums-container {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.album {
+    width: calc(100% / 3);
+    padding: 14px;
+    text-align: center;
+}
+
+.album-choose {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.album-choose:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.album img {
+    max-height: 150px;
+    max-width: 150px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.bigger-container {
+    width: 1445px;
+    background-color: rgb(58, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.bigger-container h1 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
